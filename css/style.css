@@ -1,0 +1,365 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Monoton&family=Raleway:wght@200;300;400;500;600;700&display=swap');
+/* Google Fonts */
+
+/* comon style */
+*{
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+}
+body{
+  padding: 0px;
+  margin: 0px;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: 'Aboreto', cursive;
+}
+h1{
+  font-size: 4rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: .1rem .1rem .4rem #4b4b4b;
+  opacity: .6;
+}
+/* comon style */
+
+/* Header Start */
+header{
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+.navbar{
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.nav-link{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #ffffff;
+  width: 2rem;
+  height: 15rem;
+  word-wrap: break-word;
+  text-align: center;
+  transition: .5s;
+}
+.nav-link:hover{
+  width: 10rem;
+  transition: 1s;
+  color: #ffffff;
+  background-image: linear-gradient(to top, #ffffff00,#ffffff86);
+}
+.heroCont{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  z-index: 1;
+}
+header i{
+  font-size: 10rem;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+header h1{
+  font-family: 'Monoton', cursive;
+  color: #ffffff;
+  font-size: 5rem;
+  font-weight: normal;
+  text-shadow: 0 0 1rem #000;
+  cursor: pointer;
+}
+.flotingBG{
+  width: 120vw;
+  height: 120vw;
+  background-color: #00c5d7;
+  position: absolute;
+  top: -160vh;
+  right: calc(50% - 60vw);
+  border-radius: 40%;
+  animation: rotation 20s infinite;
+}
+.flotingBG::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #00c5d76d;
+  border-radius: 35%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: rotation 10s infinite;
+}
+.flotingBG::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #00c5d73e;
+  border-radius: 35%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: rotation 15s infinite;
+}
+@keyframes rotation{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(90deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  75%{
+    transform: rotate(270deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+/* Header End */
+
+/* Customer Start */
+#customer{
+  margin-bottom: 5rem;
+}
+#customer .card{
+  width: 25%;
+  padding: 1.5rem;
+  background-color: #e9e9e9;
+  border: none;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 .5rem #cfcfcf;
+  transition: .5s;
+}
+#customer .card:hover{
+  box-shadow: .5rem .5rem .5rem #cfcfcf,
+  -.5rem -.5rem .5rem #cfcfcf;
+}
+#customer .card .fa-quote-left{
+  font-size: 5rem;
+  color: #00c5d7;
+}
+#customer .card p{
+  text-align: justify;
+}
+#customer .card i{
+  font-size: 1.5rem;
+  color: #00c5d7;
+}
+#customer .card img{
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  margin: 1rem 0;
+  border-radius: 50%;
+}
+/* Customer End */
+
+/* Team Start */
+#team{
+  margin-bottom: 5rem;
+}
+#team h1{
+  margin: 10rem;
+}
+#team .card{
+  width: 25%;
+  height: 50%;
+  box-shadow: .5rem .5rem .5rem #cfcfcf,
+  -.5rem -.5rem .5rem #cfcfcf;
+  opacity: .8;
+  transition: .5s;
+  position: relative;
+}
+#team .card:first-child{
+  margin-top: -5rem;
+}
+#team .card:last-child{
+  margin-top: 5rem;
+}
+#team .card:hover{
+  opacity: 1;
+}
+#team .card h6{
+  font-size: .8rem;
+  color: #7e7e7e;
+  font-weight: bold;
+}
+#team .card .title{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+#team .card .title h3{
+  font-size: 1.2rem;
+}
+#team .card .ul{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#team .card button{
+  width: 50%;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: .5rem;
+  border: none;
+  background-color: #00c5d7;
+  border-radius: .5rem;
+  transition: .5s;
+}
+#team .card button:hover{
+  color: #fff;
+}
+.story{
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background-color: #0077ffe9;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  transform: scale(0);
+  transform-origin: top right;
+  border-radius: 50rem 0 50rem 50rem;
+  transition: .5s;
+}
+.change.story{
+  transform: scale(1);
+  border-radius: 0;
+}
+.storyH{
+  font-size: 3rem;
+  color: #cfcfcf;
+  font-weight: bold;
+}
+.storyP{
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  word-spacing: .5rem;
+  text-align: justify;
+  text-indent: 5rem;
+}
+.storyBTN{
+  width: 3rem;
+  height: 3rem;
+  padding: .3rem;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  cursor: pointer;
+  transition: .5s;
+}
+.change.storyBTN{
+  transform: rotate(405deg);
+}
+.btnLine{
+  width: 100%;
+  height: .1rem;
+  background-color: #fff;
+}
+/* Team End */
+
+/* Contact Start */
+.contactFrom{
+  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 70rem;
+}
+.contactFrom img{
+  width: 40%;
+  background-color: #00c5d76d;
+  padding: 4rem;
+  box-shadow: -1rem 1rem 1rem #aaa;
+  border-radius: .8rem;
+  transform: rotateY(20deg);
+  transition: .5s;
+}
+.contactFrom img:hover{
+  transform: translateY(-3rem) rotateY(20deg);
+  box-shadow: -5rem 5rem 5rem #aaa;
+}
+.contactFrom form{
+  width: 40%;
+  background-color: #d7d7d7;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1rem 1rem 1rem #aaa;
+  border-radius: .8rem;
+  transform: rotateY(-20deg);
+  transition: .5s;
+}
+.contactFrom form:hover{
+  transform: translateY(-3rem) rotateY(-20deg);
+  box-shadow: 5rem 5rem 5rem #aaa;
+}
+.contactFrom form input,
+.contactFrom form textarea{
+  margin: .7rem;
+  padding: 1rem;
+  border: none;
+  border-radius: .8rem;
+  box-shadow: inset .2rem .2rem .5rem #aaa;
+}
+.contactFrom form input[type="submit"],
+.contactFrom form input[type="reset"]{
+  box-shadow: none;
+  width: 44%;
+  font-weight: bold;
+  transition: .5s;
+}
+.contactFrom form input[type="submit"]:hover{
+  background-color: #00b7c8;
+  color: #fff;
+}
+.contactFrom form input[type="reset"]:hover{
+  background-color:#747474;
+  color: #fff;
+}
+/* Contact End */
+
+/* Footer Start */
+footer{
+  width: 100%;
+  padding: 2rem 0;
+}
+footer p{
+  text-align: center;
+  font-size: 1.5rem;
+  color: #7e7e7e;
+}
+/* Footer End */
+
+/* Responsiv Section */
+
+
+
